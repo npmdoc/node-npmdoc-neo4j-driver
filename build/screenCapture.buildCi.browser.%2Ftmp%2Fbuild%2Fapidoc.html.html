@@ -1,0 +1,2217 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>neo4j-driver (v1.2.0)</a>
+</h1>
+<h4>Connect to Neo4j 3.1.0 and up from JavaScript</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver">module neo4j-driver</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>default</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>driver</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>error</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>graph_types</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>integer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>record</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>result</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>result_summary</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>routing_driver</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>session</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>transaction</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>v1</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>v1.auth</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>v1.default</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>v1.integer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>v1.types</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.driver">module neo4j-driver.driver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.driver.Driver">
+            function <span class="apidocSignatureSpan">neo4j-driver.driver.</span>Driver
+            <span class="apidocSignatureSpan">(url, userAgent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.driver.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.driver.</span>default
+            <span class="apidocSignatureSpan">(url, userAgent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.driver.</span>READ</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.driver.</span>WRITE</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.error">module neo4j-driver.error</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.error.Neo4jError">
+            function <span class="apidocSignatureSpan">neo4j-driver.error.</span>Neo4jError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.error.newError">
+            function <span class="apidocSignatureSpan">neo4j-driver.error.</span>newError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.error.</span>PROTOCOL_ERROR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.error.</span>SERVICE_UNAVAILABLE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.error.</span>SESSION_EXPIRED</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.graph_types">module neo4j-driver.graph_types</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.graph_types.Node">
+            function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>Node
+            <span class="apidocSignatureSpan">(identity, labels, properties)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.graph_types.Path">
+            function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>Path
+            <span class="apidocSignatureSpan">(start, end, segments)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.graph_types.PathSegment">
+            function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>PathSegment
+            <span class="apidocSignatureSpan">(start, rel, end)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.graph_types.Relationship">
+            function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>Relationship
+            <span class="apidocSignatureSpan">(identity, start, end, type, properties)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.graph_types.UnboundRelationship">
+            function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>UnboundRelationship
+            <span class="apidocSignatureSpan">(identity, type, properties)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.integer">module neo4j-driver.integer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.integer.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>default
+            <span class="apidocSignatureSpan">{{signature}}</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.integer.inSafeRange">
+            function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>inSafeRange
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.integer.int">
+            function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>int
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.integer.isInt">
+            function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>isInt
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.integer.toNumber">
+            function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>toNumber
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.integer.toString">
+            function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>toString
+            <span class="apidocSignatureSpan">(val, radix)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.record">module neo4j-driver.record</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.record.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.record.</span>default
+            <span class="apidocSignatureSpan">(keys, fields)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.result">module neo4j-driver.result</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.result.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.result.</span>default
+            <span class="apidocSignatureSpan">(streamObserver, statement, parameters, metaSupplier, connectionHolder)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.result_summary">module neo4j-driver.result_summary</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.result_summary.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.result_summary.</span>default
+            <span class="apidocSignatureSpan">(statement, parameters, metadata)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.result_summary.</span>statementType</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.routing_driver">module neo4j-driver.routing_driver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.routing_driver.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.routing_driver.</span>default
+            <span class="apidocSignatureSpan">(url, userAgent)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.session">module neo4j-driver.session</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.session.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.session.</span>default
+            <span class="apidocSignatureSpan">(mode, connectionProvider, bookmark, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.transaction">module neo4j-driver.transaction</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.transaction.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.transaction.</span>default
+            <span class="apidocSignatureSpan">(connectionHolder, onClose, errorTransformer, bookmark, onBookmark)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.v1">module neo4j-driver.v1</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.Neo4jError">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>Neo4jError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.driver">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>driver
+            <span class="apidocSignatureSpan">(url, authToken)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.int">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>int
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.isInt">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>isInt
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.</span>auth</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.</span>default</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.</span>error</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.</span>integer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.</span>session</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.</span>types</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.v1.auth">module neo4j-driver.v1.auth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.auth.basic">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.auth.</span>basic
+            <span class="apidocSignatureSpan">(username, password)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.auth.custom">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.auth.</span>custom
+            <span class="apidocSignatureSpan">(principal, credentials, realm, scheme)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.v1.default">module neo4j-driver.v1.default</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.default.Neo4jError">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>Neo4jError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.default.driver">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>driver
+            <span class="apidocSignatureSpan">(url, authToken)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.default.int">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>int
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.default.isInt">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>isInt
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>auth</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>error</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>integer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>session</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>types</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.v1.integer">module neo4j-driver.v1.integer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.integer.inSafeRange">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.integer.</span>inSafeRange
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.integer.toNumber">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.integer.</span>toNumber
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.integer.toString">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.integer.</span>toString
+            <span class="apidocSignatureSpan">(val, radix)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.v1.types">module neo4j-driver.v1.types</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.Node">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Node
+            <span class="apidocSignatureSpan">(identity, labels, properties)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.Path">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Path
+            <span class="apidocSignatureSpan">(start, end, segments)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.PathSegment">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>PathSegment
+            <span class="apidocSignatureSpan">(start, rel, end)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.Record">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Record
+            <span class="apidocSignatureSpan">(keys, fields)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.Relationship">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Relationship
+            <span class="apidocSignatureSpan">(identity, start, end, type, properties)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.Result">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Result
+            <span class="apidocSignatureSpan">(streamObserver, statement, parameters, metaSupplier, connectionHolder)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.ResultSummary">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>ResultSummary
+            <span class="apidocSignatureSpan">(statement, parameters, metadata)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.v1.types.UnboundRelationship">
+            function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>UnboundRelationship
+            <span class="apidocSignatureSpan">(identity, type, properties)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver" id="apidoc.module.neo4j-driver">module neo4j-driver</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.driver" id="apidoc.module.neo4j-driver.driver">module neo4j-driver.driver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.driver.Driver" id="apidoc.element.neo4j-driver.driver.Driver">
+        function <span class="apidocSignatureSpan">neo4j-driver.driver.</span>Driver
+        <span class="apidocSignatureSpan">(url, userAgent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Driver(url, userAgent) {
+  var token = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {};
+  var config = arguments.length &gt; 3 &amp;&amp; arguments[3] !== undefined ? arguments[3] : {};
+  (0, _classCallCheck3.default)(this, Driver);
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.default(this._createConnection.bind(this), this._destroyConnection.bind(this), Driver._validateConnection
+.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var config = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {};
+
+(0, _util.assertString)(url, 'Bolt URL');
+var scheme = (0, _connector.parseScheme)(url);
+if (scheme === "bolt+routing://") {
+  return new _routingDriver2.default((0, _connector.parseUrl)(url), USER_AGENT, authToken, config);
+} else if (scheme === "bolt://") {
+  return new _driver.<span class="apidocCodeKeywordSpan">Driver</span>((0, _connector.parseUrl)(url), USER_AGENT, authToken, config
+);
+} else {
+  throw new Error("Unknown scheme: " + scheme);
+}
+}
+
+var types = {
+Node: _graphTypes.Node,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.driver.default" id="apidoc.element.neo4j-driver.driver.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.driver.</span>default
+        <span class="apidocSignatureSpan">(url, userAgent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Driver(url, userAgent) {
+  var token = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {};
+  var config = arguments.length &gt; 3 &amp;&amp; arguments[3] !== undefined ? arguments[3] : {};
+  (0, _classCallCheck3.default)(this, Driver);
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.default(this._createConnection.bind(this), this._destroyConnection.bind(this), Driver._validateConnection
+.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.error" id="apidoc.module.neo4j-driver.error">module neo4j-driver.error</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.error.Neo4jError" id="apidoc.element.neo4j-driver.error.Neo4jError">
+        function <span class="apidocSignatureSpan">neo4j-driver.error.</span>Neo4jError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Neo4jError(message) {
+  var code = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : "N/A";
+  (0, _classCallCheck3.default)(this, Neo4jError);
+
+  var _this = (0, _possibleConstructorReturn3.default)(this, (Neo4jError.__proto__ || (0, _getPrototypeOf2.default)(Neo4jError)).
+call(this, message));
+
+  _this.message = message;
+  _this.code = code;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.error.newError" id="apidoc.element.neo4j-driver.error.newError">
+        function <span class="apidocSignatureSpan">neo4j-driver.error.</span>newError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function newError(message) {
+  var code = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : "N/A";
+
+  // TODO: Idea is that we can check the code here and throw sub-classes
+  // of Neo4jError as appropriate
+  return new Neo4jError(message, code);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.graph_types" id="apidoc.module.neo4j-driver.graph_types">module neo4j-driver.graph_types</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.graph_types.Node" id="apidoc.element.neo4j-driver.graph_types.Node">
+        function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>Node
+        <span class="apidocSignatureSpan">(identity, labels, properties)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Node(identity, labels, properties) {
+  (0, _classCallCheck3.default)(this, Node);
+
+  this.identity = identity;
+  this.labels = labels;
+  this.properties = properties;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+onCompleted: NO_OP,
+onError: NO_OP
+};
+
+/** Maps from packstream structures to Neo4j domain objects */
+var _mappers = {
+node: function node(unpacker, buf) {
+  return new _graphTypes.<span class="apidocCodeKeywordSpan">Node</span>(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Labels
+  unpacker.unpack(buf) // Properties
+  );
+},
+rel: function rel(unpacker, buf) {
+  return new _graphTypes.Relationship(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Start Node Identity
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.graph_types.Path" id="apidoc.element.neo4j-driver.graph_types.Path">
+        function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>Path
+        <span class="apidocSignatureSpan">(start, end, segments)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Path(start, end, segments) {
+  (0, _classCallCheck3.default)(this, Path);
+
+  this.start = start;
+  this.end = end;
+  this.segments = segments;
+  this.length = segments.length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+         rels[-relIndex - 1] = rel = rel.bind(nextNode.identity, prevNode.identity);
+       }
+     }
+     // Done hydrating one path segment.
+     segments.push(new _graphTypes.PathSegment(prevNode, rel, nextNode));
+     prevNode = nextNode;
+   }
+   return new _graphTypes.<span class="apidocCodeKeywordSpan">Path</span>(nodes[0], nodes[nodes.length - 1], segments);
+ }
+};
+
+/**
+* A connection manages sending and recieving messages over a channel. A
+* connector is very closely tied to the Bolt protocol, it implements the
+* same message structure with very little frills. This means Connectors are
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.graph_types.PathSegment" id="apidoc.element.neo4j-driver.graph_types.PathSegment">
+        function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>PathSegment
+        <span class="apidocSignatureSpan">(start, rel, end)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PathSegment(start, rel, end) {
+  (0, _classCallCheck3.default)(this, PathSegment);
+
+  this.start = start;
+  this.relationship = rel;
+  this.end = end;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        rel = rels[-relIndex - 1];
+        if (rel instanceof _graphTypes.UnboundRelationship) {
+          // See above
+          rels[-relIndex - 1] = rel = rel.bind(nextNode.identity, prevNode.identity);
+        }
+      }
+      // Done hydrating one path segment.
+      segments.push(new _graphTypes.<span class="apidocCodeKeywordSpan">PathSegment</span>(prevNode, rel, nextNode));
+      prevNode = nextNode;
+    }
+    return new _graphTypes.Path(nodes[0], nodes[nodes.length - 1], segments);
+  }
+};
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.graph_types.Relationship" id="apidoc.element.neo4j-driver.graph_types.Relationship">
+        function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>Relationship
+        <span class="apidocSignatureSpan">(identity, start, end, type, properties)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Relationship(identity, start, end, type, properties) {
+  (0, _classCallCheck3.default)(this, Relationship);
+
+  this.identity = identity;
+  this.start = start;
+  this.end = end;
+  this.type = type;
+  this.properties = properties;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+node: function node(unpacker, buf) {
+  return new _graphTypes.Node(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Labels
+  unpacker.unpack(buf) // Properties
+  );
+},
+rel: function rel(unpacker, buf) {
+  return new _graphTypes.<span class="apidocCodeKeywordSpan">Relationship</span>(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Start Node Identity
+  unpacker.unpack(buf), // End Node Identity
+  unpacker.unpack(buf), // Type
+  unpacker.unpack(buf) // Properties
+  );
+},
+unboundRel: function unboundRel(unpacker, buf) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.graph_types.UnboundRelationship" id="apidoc.element.neo4j-driver.graph_types.UnboundRelationship">
+        function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>UnboundRelationship
+        <span class="apidocSignatureSpan">(identity, type, properties)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UnboundRelationship(identity, type, properties) {
+  (0, _classCallCheck3.default)(this, UnboundRelationship);
+
+  this.identity = identity;
+  this.type = type;
+  this.properties = properties;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  unpacker.unpack(buf), // Start Node Identity
+  unpacker.unpack(buf), // End Node Identity
+  unpacker.unpack(buf), // Type
+  unpacker.unpack(buf) // Properties
+  );
+},
+unboundRel: function unboundRel(unpacker, buf) {
+  return new _graphTypes.<span class="apidocCodeKeywordSpan">UnboundRelationship</span>(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Type
+  unpacker.unpack(buf) // Properties
+  );
+},
+path: function path(unpacker, buf) {
+  var nodes = unpacker.unpack(buf),
+      rels = unpacker.unpack(buf),
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.integer" id="apidoc.module.neo4j-driver.integer">module neo4j-driver.integer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.integer.default" id="apidoc.element.neo4j-driver.integer.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>default
+        <span class="apidocSignatureSpan">{{signature}}</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.integer.inSafeRange" id="apidoc.element.neo4j-driver.integer.inSafeRange">
+        function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>inSafeRange
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inSafeRange = function (val) {
+  return Integer.fromValue(val).inSafeRange();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Read integers
+Since Integers can be larger than can be represented as JavaScript numbers, it is only safe to convert to JavaScript numbers if
+you know that they will not exceed `(2`&lt;sup&gt;`53`&lt;/sup&gt;` - 1)` in size.
+In order to facilitate working with integers the driver include `neo4j.isInt`, `neo4j.integer.inSafeRange`, `neo4j.integer.toNumber
+`, and `neo4j.integer.toString`.
+
+```javascript
+var aSmallInteger = neo4j.int(123);
+if (neo4j.integer.<span class="apidocCodeKeywordSpan">inSafeRange</span>(aSmallInteger)) {
+    var aNumber = aSmallInteger.toNumber();
+}
+```
+
+If you will be handling integers larger than that, you can should convert them to strings:
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.integer.int" id="apidoc.element.neo4j-driver.integer.int">
+        function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>int
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">int = function (val) {
+  if (val /* is compatible */ instanceof Integer) return val;
+  if (typeof val === 'number') return Integer.fromNumber(val);
+  if (typeof val === 'string') return Integer.fromString(val);
+  // Throws for non-objects, converts non-instanceof Integer:
+  return new Integer(val.low, val.high);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Write integers
+Number written directly e.g. `session.run("CREATE (n:Node {age: {age}})", {age: 22})` will be of type `Float` in Neo4j
+.
+To write the `age` as an integer the `neo4j.int` method should be used:
+
+```javascript
+var neo4j = require('neo4j-driver').v1;
+
+session.run("CREATE (n {age: {myIntParam}})", {myIntParam: neo4j.<span class="apidocCodeKeywordSpan">int</span>(22)});
+```
+
+To write integers larger than can be represented as JavaScript numbers, use a string argument to `neo4j.int`:
+
+```javascript
+session.run("CREATE (n {age: {myIntParam}})", {myIntParam: neo4j.int("9223372036854775807")});
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.integer.isInt" id="apidoc.element.neo4j-driver.integer.isInt">
+        function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>isInt
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isInt = function (obj) {
+  return (obj &amp;&amp; obj["__isInteger__"]) === true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.integer.toNumber" id="apidoc.element.neo4j-driver.integer.toNumber">
+        function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>toNumber
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toNumber = function (val) {
+  return Integer.fromValue(val).toNumber();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Read integers
+Since Integers can be larger than can be represented as JavaScript numbers, it is only safe to convert to JavaScript numbers if
+you know that they will not exceed `(2`&lt;sup&gt;`53`&lt;/sup&gt;` - 1)` in size.
+In order to facilitate working with integers the driver include `neo4j.isInt`, `neo4j.integer.inSafeRange`, `neo4j.integer.toNumber
+`, and `neo4j.integer.toString`.
+
+```javascript
+var aSmallInteger = neo4j.int(123);
+if (neo4j.integer.inSafeRange(aSmallInteger)) {
+    var aNumber = aSmallInteger.<span class="apidocCodeKeywordSpan">toNumber</span>();
+}
+```
+
+If you will be handling integers larger than that, you can should convert them to strings:
+
+```javascript
+var aLargerInteger = neo4j.int("9223372036854775807");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.integer.toString" id="apidoc.element.neo4j-driver.integer.toString">
+        function <span class="apidocSignatureSpan">neo4j-driver.integer.</span>toString
+        <span class="apidocSignatureSpan">(val, radix)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function (val, radix) {
+  return Integer.fromValue(val).toString(radix);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+If you will be handling integers larger than that, you can should convert them to strings:
+
+```javascript
+var aLargerInteger = neo4j.int("9223372036854775807");
+if (!neo4j.integer.inSafeRange(aSmallInteger)) {
+    var integerAsString = aLargerInteger.<span class="apidocCodeKeywordSpan">toString</span>();
+}
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.record" id="apidoc.module.neo4j-driver.record">module neo4j-driver.record</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.record.default" id="apidoc.element.neo4j-driver.record.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.record.</span>default
+        <span class="apidocSignatureSpan">(keys, fields)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Record(keys, fields) {
+  var fieldLookup = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : null;
+  (0, _classCallCheck3.default)(this, Record);
+
+  this.keys = keys;
+  this.length = keys.length;
+  this._fields = fields;
+  this._fieldLookup = fieldLookup || generateFieldLookup(keys);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.result" id="apidoc.module.neo4j-driver.result">module neo4j-driver.result</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.result.default" id="apidoc.element.neo4j-driver.result.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.result.</span>default
+        <span class="apidocSignatureSpan">(streamObserver, statement, parameters, metaSupplier, connectionHolder)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Result(streamObserver, statement, parameters, metaSupplier, connectionHolder) {
+  (0, _classCallCheck3.default)(this, Result);
+
+  this._streamObserver = streamObserver;
+  this._p = null;
+  this._statement = statement;
+  this._parameters = parameters || {};
+  this._metaSupplier = metaSupplier || function () {
+    return {};
+  };
+  this._connectionHolder = connectionHolder || _connectionHolder.EMPTY_CONNECTION_HOLDER;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.result_summary" id="apidoc.module.neo4j-driver.result_summary">module neo4j-driver.result_summary</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.result_summary.default" id="apidoc.element.neo4j-driver.result_summary.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.result_summary.</span>default
+        <span class="apidocSignatureSpan">(statement, parameters, metadata)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ResultSummary(statement, parameters, metadata) {
+  (0, _classCallCheck3.default)(this, ResultSummary);
+
+  this.statement = { text: statement, parameters: parameters };
+  this.statementType = metadata.type;
+  var counters = new StatementStatistics(metadata.stats || {});
+  this.counters = counters;
+  //for backwards compatibility, remove in future version
+  this.updateStatistics = counters;
+  this.plan = metadata.plan || metadata.profile ? new Plan(metadata.plan || metadata.profile) : false;
+  this.profile = metadata.profile ? new ProfiledPlan(metadata.profile) : false;
+  this.notifications = this._buildNotifications(metadata.notifications);
+  this.server = new ServerInfo(metadata.server);
+  this.resultConsumedAfter = metadata.result_consumed_after;
+  this.resultAvailableAfter = metadata.result_available_after;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.routing_driver" id="apidoc.module.neo4j-driver.routing_driver">module neo4j-driver.routing_driver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.routing_driver.default" id="apidoc.element.neo4j-driver.routing_driver.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.routing_driver.</span>default
+        <span class="apidocSignatureSpan">(url, userAgent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RoutingDriver(url, userAgent) {
+  var token = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {};
+  var config = arguments.length &gt; 3 &amp;&amp; arguments[3] !== undefined ? arguments[3] : {};
+  (0, _classCallCheck3.default)(this, RoutingDriver);
+  return (0, _possibleConstructorReturn3.default)(this, (RoutingDriver.__proto__ || (0, _getPrototypeOf2.default)(RoutingDriver)).
+call(this, url, userAgent, token, RoutingDriver._validateConfig(config)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.session" id="apidoc.module.neo4j-driver.session">module neo4j-driver.session</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.session.default" id="apidoc.element.neo4j-driver.session.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.session.</span>default
+        <span class="apidocSignatureSpan">(mode, connectionProvider, bookmark, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Session(mode, connectionProvider, bookmark, config) {
+  (0, _classCallCheck3.default)(this, Session);
+
+  this._mode = mode;
+  this._readConnectionHolder = new _connectionHolder2.default(_driver.READ, connectionProvider);
+  this._writeConnectionHolder = new _connectionHolder2.default(_driver.WRITE, connectionProvider);
+  this._open = true;
+  this._hasTx = false;
+  this._lastBookmark = bookmark;
+  this._transactionExecutor = _createTransactionExecutor(config);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.transaction" id="apidoc.module.neo4j-driver.transaction">module neo4j-driver.transaction</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.transaction.default" id="apidoc.element.neo4j-driver.transaction.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.transaction.</span>default
+        <span class="apidocSignatureSpan">(connectionHolder, onClose, errorTransformer, bookmark, onBookmark)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transaction(connectionHolder, onClose, errorTransformer, bookmark, onBookmark) {
+  (0, _classCallCheck3.default)(this, Transaction);
+
+  this._connectionHolder = connectionHolder;
+  var streamObserver = new _TransactionStreamObserver(this);
+  var params = {};
+  if (bookmark) {
+    params = { bookmark: bookmark };
+  }
+
+  this._connectionHolder.getConnection().then(function (conn) {
+    streamObserver.resolveConnection(conn);
+    conn.run('BEGIN', params, streamObserver);
+    conn.pullAll(streamObserver);
+  }).catch(function (error) {
+    return streamObserver.onError(error);
+  });
+
+  this._state = _states.ACTIVE;
+  this._onClose = onClose;
+  this._errorTransformer = errorTransformer;
+  this._onBookmark = onBookmark || function () {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.v1" id="apidoc.module.neo4j-driver.v1">module neo4j-driver.v1</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.Neo4jError" id="apidoc.element.neo4j-driver.v1.Neo4jError">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>Neo4jError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Neo4jError(message) {
+  var code = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : "N/A";
+  (0, _classCallCheck3.default)(this, Neo4jError);
+
+  var _this = (0, _possibleConstructorReturn3.default)(this, (Neo4jError.__proto__ || (0, _getPrototypeOf2.default)(Neo4jError)).
+call(this, message));
+
+  _this.message = message;
+  _this.code = code;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.driver" id="apidoc.element.neo4j-driver.v1.driver">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>driver
+        <span class="apidocSignatureSpan">(url, authToken)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function driver(url, authToken) {
+  var config = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {};
+
+  (0, _util.assertString)(url, 'Bolt URL');
+  var scheme = (0, _connector.parseScheme)(url);
+  if (scheme === "bolt+routing://") {
+    return new _routingDriver2.default((0, _connector.parseUrl)(url), USER_AGENT, authToken, config);
+  } else if (scheme === "bolt://") {
+    return new _driver.Driver((0, _connector.parseUrl)(url), USER_AGENT, authToken, config);
+  } else {
+    throw new Error("Unknown scheme: " + scheme);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```html
+&lt;script src="lib/browser/neo4j-web.min.js"&gt;&lt;/script&gt;
+```
+
+This will make a global `neo4j` object available, where you can access the `v1` API at `neo4j.v1`:
+
+```javascript
+var driver = neo4j.<span class="apidocCodeKeywordSpan">driver</span>("bolt://localhost", neo4j.auth.basic("neo4j&amp;#
+x22;, "neo4j"));
+```
+
+It is not required to explicitly close the driver on a web page. Web browser should gracefully close all open
+WebSockets when the page is unloaded. However, driver instance should be explicitly closed when it's lifetime
+is not the same as the lifetime of the web page:
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.int" id="apidoc.element.neo4j-driver.v1.int">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>int
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">int = function (val) {
+  if (val /* is compatible */ instanceof Integer) return val;
+  if (typeof val === 'number') return Integer.fromNumber(val);
+  if (typeof val === 'string') return Integer.fromString(val);
+  // Throws for non-objects, converts non-instanceof Integer:
+  return new Integer(val.low, val.high);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Write integers
+Number written directly e.g. `session.run("CREATE (n:Node {age: {age}})", {age: 22})` will be of type `Float` in Neo4j
+.
+To write the `age` as an integer the `neo4j.int` method should be used:
+
+```javascript
+var neo4j = require('neo4j-driver').v1;
+
+session.run("CREATE (n {age: {myIntParam}})", {myIntParam: neo4j.<span class="apidocCodeKeywordSpan">int</span>(22)});
+```
+
+To write integers larger than can be represented as JavaScript numbers, use a string argument to `neo4j.int`:
+
+```javascript
+session.run("CREATE (n {age: {myIntParam}})", {myIntParam: neo4j.int("9223372036854775807")});
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.isInt" id="apidoc.element.neo4j-driver.v1.isInt">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.</span>isInt
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isInt = function (obj) {
+  return (obj &amp;&amp; obj["__isInteger__"]) === true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.v1.auth" id="apidoc.module.neo4j-driver.v1.auth">module neo4j-driver.v1.auth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.auth.basic" id="apidoc.element.neo4j-driver.v1.auth.basic">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.auth.</span>basic
+        <span class="apidocSignatureSpan">(username, password)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function basic(username, password) {
+  var realm = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : undefined;
+
+  if (realm) {
+    return { scheme: "basic", principal: username, credentials: password, realm: realm };
+  } else {
+    return { scheme: "basic", principal: username, credentials: password };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```html
+&lt;script src="lib/browser/neo4j-web.min.js"&gt;&lt;/script&gt;
+```
+
+This will make a global `neo4j` object available, where you can access the `v1` API at `neo4j.v1`:
+
+```javascript
+var driver = neo4j.driver("bolt://localhost", neo4j.auth.<span class="apidocCodeKeywordSpan">basic</span>("neo4j&amp;#
+x22;, "neo4j"));
+```
+
+It is not required to explicitly close the driver on a web page. Web browser should gracefully close all open
+WebSockets when the page is unloaded. However, driver instance should be explicitly closed when it's lifetime
+is not the same as the lifetime of the web page:
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.auth.custom" id="apidoc.element.neo4j-driver.v1.auth.custom">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.auth.</span>custom
+        <span class="apidocSignatureSpan">(principal, credentials, realm, scheme)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function custom(principal, credentials, realm, scheme) {
+  var parameters = arguments.length &gt; 4 &amp;&amp; arguments[4] !== undefined ? arguments[4] : undefined;
+
+  if (parameters) {
+    return { scheme: scheme, principal: principal, credentials: credentials, realm: realm,
+      parameters: parameters };
+  } else {
+    return { scheme: scheme, principal: principal, credentials: credentials, realm: realm };
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.v1.default" id="apidoc.module.neo4j-driver.v1.default">module neo4j-driver.v1.default</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.default.Neo4jError" id="apidoc.element.neo4j-driver.v1.default.Neo4jError">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>Neo4jError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Neo4jError(message) {
+  var code = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : "N/A";
+  (0, _classCallCheck3.default)(this, Neo4jError);
+
+  var _this = (0, _possibleConstructorReturn3.default)(this, (Neo4jError.__proto__ || (0, _getPrototypeOf2.default)(Neo4jError)).
+call(this, message));
+
+  _this.message = message;
+  _this.code = code;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.default.driver" id="apidoc.element.neo4j-driver.v1.default.driver">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>driver
+        <span class="apidocSignatureSpan">(url, authToken)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function driver(url, authToken) {
+  var config = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : {};
+
+  (0, _util.assertString)(url, 'Bolt URL');
+  var scheme = (0, _connector.parseScheme)(url);
+  if (scheme === "bolt+routing://") {
+    return new _routingDriver2.default((0, _connector.parseUrl)(url), USER_AGENT, authToken, config);
+  } else if (scheme === "bolt://") {
+    return new _driver.Driver((0, _connector.parseUrl)(url), USER_AGENT, authToken, config);
+  } else {
+    throw new Error("Unknown scheme: " + scheme);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```html
+&lt;script src="lib/browser/neo4j-web.min.js"&gt;&lt;/script&gt;
+```
+
+This will make a global `neo4j` object available, where you can access the `v1` API at `neo4j.v1`:
+
+```javascript
+var driver = neo4j.<span class="apidocCodeKeywordSpan">driver</span>("bolt://localhost", neo4j.auth.basic("neo4j&amp;#
+x22;, "neo4j"));
+```
+
+It is not required to explicitly close the driver on a web page. Web browser should gracefully close all open
+WebSockets when the page is unloaded. However, driver instance should be explicitly closed when it's lifetime
+is not the same as the lifetime of the web page:
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.default.int" id="apidoc.element.neo4j-driver.v1.default.int">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>int
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">int = function (val) {
+  if (val /* is compatible */ instanceof Integer) return val;
+  if (typeof val === 'number') return Integer.fromNumber(val);
+  if (typeof val === 'string') return Integer.fromString(val);
+  // Throws for non-objects, converts non-instanceof Integer:
+  return new Integer(val.low, val.high);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Write integers
+Number written directly e.g. `session.run("CREATE (n:Node {age: {age}})", {age: 22})` will be of type `Float` in Neo4j
+.
+To write the `age` as an integer the `neo4j.int` method should be used:
+
+```javascript
+var neo4j = require('neo4j-driver').v1;
+
+session.run("CREATE (n {age: {myIntParam}})", {myIntParam: neo4j.<span class="apidocCodeKeywordSpan">int</span>(22)});
+```
+
+To write integers larger than can be represented as JavaScript numbers, use a string argument to `neo4j.int`:
+
+```javascript
+session.run("CREATE (n {age: {myIntParam}})", {myIntParam: neo4j.int("9223372036854775807")});
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.default.isInt" id="apidoc.element.neo4j-driver.v1.default.isInt">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.default.</span>isInt
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isInt = function (obj) {
+  return (obj &amp;&amp; obj["__isInteger__"]) === true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.v1.integer" id="apidoc.module.neo4j-driver.v1.integer">module neo4j-driver.v1.integer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.integer.inSafeRange" id="apidoc.element.neo4j-driver.v1.integer.inSafeRange">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.integer.</span>inSafeRange
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inSafeRange = function (val) {
+  return Integer.fromValue(val).inSafeRange();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Read integers
+Since Integers can be larger than can be represented as JavaScript numbers, it is only safe to convert to JavaScript numbers if
+you know that they will not exceed `(2`&lt;sup&gt;`53`&lt;/sup&gt;` - 1)` in size.
+In order to facilitate working with integers the driver include `neo4j.isInt`, `neo4j.integer.inSafeRange`, `neo4j.integer.toNumber
+`, and `neo4j.integer.toString`.
+
+```javascript
+var aSmallInteger = neo4j.int(123);
+if (neo4j.integer.<span class="apidocCodeKeywordSpan">inSafeRange</span>(aSmallInteger)) {
+    var aNumber = aSmallInteger.toNumber();
+}
+```
+
+If you will be handling integers larger than that, you can should convert them to strings:
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.integer.toNumber" id="apidoc.element.neo4j-driver.v1.integer.toNumber">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.integer.</span>toNumber
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toNumber = function (val) {
+  return Integer.fromValue(val).toNumber();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Read integers
+Since Integers can be larger than can be represented as JavaScript numbers, it is only safe to convert to JavaScript numbers if
+you know that they will not exceed `(2`&lt;sup&gt;`53`&lt;/sup&gt;` - 1)` in size.
+In order to facilitate working with integers the driver include `neo4j.isInt`, `neo4j.integer.inSafeRange`, `neo4j.integer.toNumber
+`, and `neo4j.integer.toString`.
+
+```javascript
+var aSmallInteger = neo4j.int(123);
+if (neo4j.integer.inSafeRange(aSmallInteger)) {
+    var aNumber = aSmallInteger.<span class="apidocCodeKeywordSpan">toNumber</span>();
+}
+```
+
+If you will be handling integers larger than that, you can should convert them to strings:
+
+```javascript
+var aLargerInteger = neo4j.int("9223372036854775807");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.integer.toString" id="apidoc.element.neo4j-driver.v1.integer.toString">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.integer.</span>toString
+        <span class="apidocSignatureSpan">(val, radix)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function (val, radix) {
+  return Integer.fromValue(val).toString(radix);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+If you will be handling integers larger than that, you can should convert them to strings:
+
+```javascript
+var aLargerInteger = neo4j.int("9223372036854775807");
+if (!neo4j.integer.inSafeRange(aSmallInteger)) {
+    var integerAsString = aLargerInteger.<span class="apidocCodeKeywordSpan">toString</span>();
+}
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.v1.types" id="apidoc.module.neo4j-driver.v1.types">module neo4j-driver.v1.types</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.Node" id="apidoc.element.neo4j-driver.v1.types.Node">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Node
+        <span class="apidocSignatureSpan">(identity, labels, properties)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Node(identity, labels, properties) {
+  (0, _classCallCheck3.default)(this, Node);
+
+  this.identity = identity;
+  this.labels = labels;
+  this.properties = properties;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+onCompleted: NO_OP,
+onError: NO_OP
+};
+
+/** Maps from packstream structures to Neo4j domain objects */
+var _mappers = {
+node: function node(unpacker, buf) {
+  return new _graphTypes.<span class="apidocCodeKeywordSpan">Node</span>(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Labels
+  unpacker.unpack(buf) // Properties
+  );
+},
+rel: function rel(unpacker, buf) {
+  return new _graphTypes.Relationship(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Start Node Identity
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.Path" id="apidoc.element.neo4j-driver.v1.types.Path">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Path
+        <span class="apidocSignatureSpan">(start, end, segments)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Path(start, end, segments) {
+  (0, _classCallCheck3.default)(this, Path);
+
+  this.start = start;
+  this.end = end;
+  this.segments = segments;
+  this.length = segments.length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+         rels[-relIndex - 1] = rel = rel.bind(nextNode.identity, prevNode.identity);
+       }
+     }
+     // Done hydrating one path segment.
+     segments.push(new _graphTypes.PathSegment(prevNode, rel, nextNode));
+     prevNode = nextNode;
+   }
+   return new _graphTypes.<span class="apidocCodeKeywordSpan">Path</span>(nodes[0], nodes[nodes.length - 1], segments);
+ }
+};
+
+/**
+* A connection manages sending and recieving messages over a channel. A
+* connector is very closely tied to the Bolt protocol, it implements the
+* same message structure with very little frills. This means Connectors are
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.PathSegment" id="apidoc.element.neo4j-driver.v1.types.PathSegment">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>PathSegment
+        <span class="apidocSignatureSpan">(start, rel, end)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PathSegment(start, rel, end) {
+  (0, _classCallCheck3.default)(this, PathSegment);
+
+  this.start = start;
+  this.relationship = rel;
+  this.end = end;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        rel = rels[-relIndex - 1];
+        if (rel instanceof _graphTypes.UnboundRelationship) {
+          // See above
+          rels[-relIndex - 1] = rel = rel.bind(nextNode.identity, prevNode.identity);
+        }
+      }
+      // Done hydrating one path segment.
+      segments.push(new _graphTypes.<span class="apidocCodeKeywordSpan">PathSegment</span>(prevNode, rel, nextNode));
+      prevNode = nextNode;
+    }
+    return new _graphTypes.Path(nodes[0], nodes[nodes.length - 1], segments);
+  }
+};
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.Record" id="apidoc.element.neo4j-driver.v1.types.Record">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Record
+        <span class="apidocSignatureSpan">(keys, fields)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Record(keys, fields) {
+  var fieldLookup = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : null;
+  (0, _classCallCheck3.default)(this, Record);
+
+  this.keys = keys;
+  this.length = keys.length;
+  this._fields = fields;
+  this._fieldLookup = fieldLookup || generateFieldLookup(keys);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.Relationship" id="apidoc.element.neo4j-driver.v1.types.Relationship">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Relationship
+        <span class="apidocSignatureSpan">(identity, start, end, type, properties)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Relationship(identity, start, end, type, properties) {
+  (0, _classCallCheck3.default)(this, Relationship);
+
+  this.identity = identity;
+  this.start = start;
+  this.end = end;
+  this.type = type;
+  this.properties = properties;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+node: function node(unpacker, buf) {
+  return new _graphTypes.Node(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Labels
+  unpacker.unpack(buf) // Properties
+  );
+},
+rel: function rel(unpacker, buf) {
+  return new _graphTypes.<span class="apidocCodeKeywordSpan">Relationship</span>(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Start Node Identity
+  unpacker.unpack(buf), // End Node Identity
+  unpacker.unpack(buf), // Type
+  unpacker.unpack(buf) // Properties
+  );
+},
+unboundRel: function unboundRel(unpacker, buf) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.Result" id="apidoc.element.neo4j-driver.v1.types.Result">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>Result
+        <span class="apidocSignatureSpan">(streamObserver, statement, parameters, metaSupplier, connectionHolder)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Result(streamObserver, statement, parameters, metaSupplier, connectionHolder) {
+  (0, _classCallCheck3.default)(this, Result);
+
+  this._streamObserver = streamObserver;
+  this._p = null;
+  this._statement = statement;
+  this._parameters = parameters || {};
+  this._metaSupplier = metaSupplier || function () {
+    return {};
+  };
+  this._connectionHolder = connectionHolder || _connectionHolder.EMPTY_CONNECTION_HOLDER;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.ResultSummary" id="apidoc.element.neo4j-driver.v1.types.ResultSummary">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>ResultSummary
+        <span class="apidocSignatureSpan">(statement, parameters, metadata)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ResultSummary(statement, parameters, metadata) {
+  (0, _classCallCheck3.default)(this, ResultSummary);
+
+  this.statement = { text: statement, parameters: parameters };
+  this.statementType = metadata.type;
+  var counters = new StatementStatistics(metadata.stats || {});
+  this.counters = counters;
+  //for backwards compatibility, remove in future version
+  this.updateStatistics = counters;
+  this.plan = metadata.plan || metadata.profile ? new Plan(metadata.plan || metadata.profile) : false;
+  this.profile = metadata.profile ? new ProfiledPlan(metadata.profile) : false;
+  this.notifications = this._buildNotifications(metadata.notifications);
+  this.server = new ServerInfo(metadata.server);
+  this.resultConsumedAfter = metadata.result_consumed_after;
+  this.resultAvailableAfter = metadata.result_available_after;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.v1.types.UnboundRelationship" id="apidoc.element.neo4j-driver.v1.types.UnboundRelationship">
+        function <span class="apidocSignatureSpan">neo4j-driver.v1.types.</span>UnboundRelationship
+        <span class="apidocSignatureSpan">(identity, type, properties)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UnboundRelationship(identity, type, properties) {
+  (0, _classCallCheck3.default)(this, UnboundRelationship);
+
+  this.identity = identity;
+  this.type = type;
+  this.properties = properties;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  unpacker.unpack(buf), // Start Node Identity
+  unpacker.unpack(buf), // End Node Identity
+  unpacker.unpack(buf), // Type
+  unpacker.unpack(buf) // Properties
+  );
+},
+unboundRel: function unboundRel(unpacker, buf) {
+  return new _graphTypes.<span class="apidocCodeKeywordSpan">UnboundRelationship</span>(unpacker.unpack(buf), // Identity
+  unpacker.unpack(buf), // Type
+  unpacker.unpack(buf) // Properties
+  );
+},
+path: function path(unpacker, buf) {
+  var nodes = unpacker.unpack(buf),
+      rels = unpacker.unpack(buf),
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
