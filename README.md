@@ -1,6 +1,6 @@
 # npmdoc-neo4j-driver
 
-#### api documentation for  neo4j-driver (v1.2.0)  [![npm package](https://img.shields.io/npm/v/npmdoc-neo4j-driver.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-neo4j-driver) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-neo4j-driver.svg)](https://travis-ci.org/npmdoc/node-npmdoc-neo4j-driver)
+#### basic api documentation for  [neo4j-driver (v1.2.0)](https://github.com/neo4j/neo4j-javascript-driver#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-neo4j-driver.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-neo4j-driver) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-neo4j-driver.svg)](https://travis-ci.org/npmdoc/node-npmdoc-neo4j-driver)
 
 #### Connect to Neo4j 3.1.0 and up from JavaScript
 
@@ -21,26 +21,16 @@
 ```json
 
 {
-    "name": "neo4j-driver",
-    "version": "1.2.0",
+    "author": {
+        "name": "Neo Technology Inc."
+    },
+    "bugs": {
+        "url": "https://github.com/neo4j/neo4j-javascript-driver/issues"
+    },
+    "dependencies": {
+        "babel-runtime": "^6.18.0"
+    },
     "description": "Connect to Neo4j 3.1.0 and up from JavaScript",
-    "author": "Neo Technology Inc.",
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/neo4j/neo4j-javascript-driver.git"
-    },
-    "scripts": {
-        "test": "gulp test",
-        "boltkit": "gulp test-boltkit",
-        "build": "gulp all",
-        "start-neo4j": "gulp start-neo4j",
-        "stop-neo4j": "gulp stop-neo4j",
-        "run-tck": "gulp run-tck",
-        "docs": "esdoc -c esdoc.json",
-        "versionRelease": "gulp set --version $VERSION && npm version $VERSION --no-git-tag-version"
-    },
-    "main": "lib/index.js",
     "devDependencies": {
         "babel-core": "^6.17.0",
         "babel-plugin-transform-runtime": "^6.15.0",
@@ -83,9 +73,40 @@
         "vinyl-buffer": "^1.0.0",
         "vinyl-source-stream": "^1.1.0"
     },
-    "dependencies": {
-        "babel-runtime": "^6.18.0"
-    }
+    "directories": {},
+    "dist": {
+        "shasum": "e81ab4e8781d3839cb3b7c9bbde9b2d63a162356",
+        "tarball": "https://registry.npmjs.org/neo4j-driver/-/neo4j-driver-1.2.0.tgz"
+    },
+    "homepage": "https://github.com/neo4j/neo4j-javascript-driver#readme",
+    "license": "Apache-2.0",
+    "main": "lib/index.js",
+    "maintainers": [
+        {
+            "name": "jakewins"
+        },
+        {
+            "name": "neo4j-organization"
+        }
+    ],
+    "name": "neo4j-driver",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/neo4j/neo4j-javascript-driver.git"
+    },
+    "scripts": {
+        "boltkit": "gulp test-boltkit",
+        "build": "gulp all",
+        "docs": "esdoc -c esdoc.json",
+        "run-tck": "gulp run-tck",
+        "start-neo4j": "gulp start-neo4j",
+        "stop-neo4j": "gulp stop-neo4j",
+        "test": "gulp test",
+        "versionRelease": "gulp set --version $VERSION && npm version $VERSION --no-git-tag-version"
+    },
+    "version": "1.2.0",
+    "bin": {}
 }
 ```
 
