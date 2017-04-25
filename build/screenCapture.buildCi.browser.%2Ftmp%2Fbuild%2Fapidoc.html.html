@@ -47,12 +47,48 @@
 }
 </style>
 <h1>api documentation for
-    <a>neo4j-driver (v1.2.0)</a>
+    <a href="https://github.com/neo4j/neo4j-javascript-driver#readme">neo4j-driver (v1.2.0)</a>
 </h1>
 <h4>Connect to Neo4j 3.1.0 and up from JavaScript</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver">module neo4j-driver</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>buf</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>ch_dummy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>chunking</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>connection_holder</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>connection_providers</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>connector</span>
+
+        </li>
 
         <li>
 
@@ -74,7 +110,25 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>features</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>get_servers_util</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>graph_types</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>host_name_resolvers</span>
 
         </li>
 
@@ -86,7 +140,25 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>packstream</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>pool</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>record</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>rediscovery</span>
 
         </li>
 
@@ -104,7 +176,19 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>round_robin_array</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>routing_driver</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>routing_table</span>
 
         </li>
 
@@ -116,7 +200,25 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>stream_observer</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>transaction</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>transaction_executor</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>util</span>
 
         </li>
 
@@ -147,6 +249,213 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.</span>v1.types</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.buf">module neo4j-driver.buf</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.buf.BaseBuffer">
+            function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>BaseBuffer
+            <span class="apidocSignatureSpan">(size)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.buf.CombinedBuffer">
+            function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>CombinedBuffer
+            <span class="apidocSignatureSpan">(buffers)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.buf.HeapBuffer">
+            function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>HeapBuffer
+            <span class="apidocSignatureSpan">(arg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.buf.NodeBuffer">
+            function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>NodeBuffer
+            <span class="apidocSignatureSpan">(arg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.buf.SliceBuffer">
+            function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>SliceBuffer
+            <span class="apidocSignatureSpan">(start, length, inner)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.buf.alloc">
+            function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>alloc
+            <span class="apidocSignatureSpan">(size)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.ch_dummy">module neo4j-driver.ch_dummy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.ch_dummy.channel">
+            function <span class="apidocSignatureSpan">neo4j-driver.ch_dummy.</span>channel
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.ch_dummy.</span>observer</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.chunking">module neo4j-driver.chunking</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.chunking.Chunker">
+            function <span class="apidocSignatureSpan">neo4j-driver.chunking.</span>Chunker
+            <span class="apidocSignatureSpan">(channel, bufferSize)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.chunking.Dechunker">
+            function <span class="apidocSignatureSpan">neo4j-driver.chunking.</span>Dechunker
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.connection_holder">module neo4j-driver.connection_holder</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connection_holder.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.connection_holder.</span>default
+            <span class="apidocSignatureSpan">(mode, connectionProvider)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">neo4j-driver.connection_holder.</span>EMPTY_CONNECTION_HOLDER</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.connection_providers">module neo4j-driver.connection_providers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connection_providers.DirectConnectionProvider">
+            function <span class="apidocSignatureSpan">neo4j-driver.connection_providers.</span>DirectConnectionProvider
+            <span class="apidocSignatureSpan">(address, connectionPool, driverOnErrorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connection_providers.LoadBalancer">
+            function <span class="apidocSignatureSpan">neo4j-driver.connection_providers.</span>LoadBalancer
+            <span class="apidocSignatureSpan">(address, connectionPool, driverOnErrorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connection_providers.SingleConnectionProvider">
+            function <span class="apidocSignatureSpan">neo4j-driver.connection_providers.</span>SingleConnectionProvider
+            <span class="apidocSignatureSpan">(connectionPromise)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.connector">module neo4j-driver.connector</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connector.Connection">
+            function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>Connection
+            <span class="apidocSignatureSpan">(channel, url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connector.connect">
+            function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>connect
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connector.parseHost">
+            function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parseHost
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connector.parsePort">
+            function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parsePort
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connector.parseScheme">
+            function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parseScheme
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.connector.parseUrl">
+            function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parseUrl
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
 
         </li>
 
@@ -226,6 +535,32 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.features">module neo4j-driver.features</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.features.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.features.</span>default
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.get_servers_util">module neo4j-driver.get_servers_util</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.get_servers_util.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.get_servers_util.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.graph_types">module neo4j-driver.graph_types</a><ol>
 
         <li>
@@ -269,6 +604,28 @@
             <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.graph_types.UnboundRelationship">
             function <span class="apidocSignatureSpan">neo4j-driver.graph_types.</span>UnboundRelationship
             <span class="apidocSignatureSpan">(identity, type, properties)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.host_name_resolvers">module neo4j-driver.host_name_resolvers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.host_name_resolvers.DnsHostNameResolver">
+            function <span class="apidocSignatureSpan">neo4j-driver.host_name_resolvers.</span>DnsHostNameResolver
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.host_name_resolvers.DummyHostNameResolver">
+            function <span class="apidocSignatureSpan">neo4j-driver.host_name_resolvers.</span>DummyHostNameResolver
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -333,6 +690,50 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.packstream">module neo4j-driver.packstream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.packstream.Packer">
+            function <span class="apidocSignatureSpan">neo4j-driver.packstream.</span>Packer
+            <span class="apidocSignatureSpan">(channel)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.packstream.Structure">
+            function <span class="apidocSignatureSpan">neo4j-driver.packstream.</span>Structure
+            <span class="apidocSignatureSpan">(signature, fields)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.packstream.Unpacker">
+            function <span class="apidocSignatureSpan">neo4j-driver.packstream.</span>Unpacker
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.pool">module neo4j-driver.pool</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.pool.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.pool.</span>default
+            <span class="apidocSignatureSpan">(create)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.record">module neo4j-driver.record</a><ol>
 
         <li>
@@ -340,6 +741,19 @@
             <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.record.default">
             function <span class="apidocSignatureSpan">neo4j-driver.record.</span>default
             <span class="apidocSignatureSpan">(keys, fields)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.rediscovery">module neo4j-driver.rediscovery</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.rediscovery.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.rediscovery.</span>default
+            <span class="apidocSignatureSpan">(getServersUtil)</span>
             </a>
 
         </li>
@@ -378,6 +792,19 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.round_robin_array">module neo4j-driver.round_robin_array</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.round_robin_array.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.round_robin_array.</span>default
+            <span class="apidocSignatureSpan">(items)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.routing_driver">module neo4j-driver.routing_driver</a><ol>
 
         <li>
@@ -385,6 +812,19 @@
             <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.routing_driver.default">
             function <span class="apidocSignatureSpan">neo4j-driver.routing_driver.</span>default
             <span class="apidocSignatureSpan">(url, userAgent)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.routing_table">module neo4j-driver.routing_table</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.routing_table.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.routing_table.</span>default
+            <span class="apidocSignatureSpan">(routers, readers, writers, expirationTime)</span>
             </a>
 
         </li>
@@ -404,6 +844,19 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.stream_observer">module neo4j-driver.stream_observer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.stream_observer.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.stream_observer.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.transaction">module neo4j-driver.transaction</a><ol>
 
         <li>
@@ -412,6 +865,53 @@
             function <span class="apidocSignatureSpan">neo4j-driver.transaction.</span>default
             <span class="apidocSignatureSpan">(connectionHolder, onClose, errorTransformer, bookmark, onBookmark)</span>
             </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.transaction_executor">module neo4j-driver.transaction_executor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.transaction_executor.default">
+            function <span class="apidocSignatureSpan">neo4j-driver.transaction_executor.</span>default
+            <span class="apidocSignatureSpan">(maxRetryTimeMs, initialRetryDelayMs, multiplier, jitterFactor)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.neo4j-driver.util">module neo4j-driver.util</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.util.assertString">
+            function <span class="apidocSignatureSpan">neo4j-driver.util.</span>assertString
+            <span class="apidocSignatureSpan">(obj, objName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.neo4j-driver.util.isEmptyObjectOrNull">
+            function <span class="apidocSignatureSpan">neo4j-driver.util.</span>isEmptyObjectOrNull
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.util.</span>ENCRYPTION_OFF</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">neo4j-driver.util.</span>ENCRYPTION_ON</span>
 
         </li>
 
@@ -729,6 +1229,715 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.buf" id="apidoc.module.neo4j-driver.buf">module neo4j-driver.buf</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.buf.BaseBuffer" id="apidoc.element.neo4j-driver.buf.BaseBuffer">
+        function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>BaseBuffer
+        <span class="apidocSignatureSpan">(size)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BaseBuffer(size) {
+  (0, _classCallCheck3.default)(this, BaseBuffer);
+
+  this.position = 0;
+  this.length = size;
+  // Calling these out - this is the required
+  // methods a subclass needs to implement
+  var getUInt8 = null;
+  var getInt8 = null;
+  var getFloat64 = null;
+  var getSlice = null;
+  var putFloat64 = null;
+  var putUInt8 = null;
+  var putInt8 = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.buf.CombinedBuffer" id="apidoc.element.neo4j-driver.buf.CombinedBuffer">
+        function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>CombinedBuffer
+        <span class="apidocSignatureSpan">(buffers)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CombinedBuffer(buffers) {
+  (0, _classCallCheck3.default)(this, CombinedBuffer);
+
+  var length = 0;
+  for (var i = 0; i &lt; buffers.length; i++) {
+    length += buffers[i].length;
+  }
+
+  var _this3 = (0, _possibleConstructorReturn3.default)(this, (CombinedBuffer.__proto__ || (0, _getPrototypeOf2.default)(CombinedBuffer
+)).call(this, length));
+
+  _this3._buffers = buffers;
+  return _this3;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    value: function _onHeader(header) {
+if (header == 0) {
+  // Message boundary
+  var message = void 0;
+  if (this._currentMessage.length == 1) {
+    message = this._currentMessage[0];
+  } else {
+    message = new _buf.<span class="apidocCodeKeywordSpan">CombinedBuffer</span>(this._currentMessage);
+  }
+  this._currentMessage = [];
+  this.onmessage(message);
+  return this.AWAITING_CHUNK;
+} else {
+  this._chunkSize = header;
+  return this.IN_CHUNK;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.buf.HeapBuffer" id="apidoc.element.neo4j-driver.buf.HeapBuffer">
+        function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>HeapBuffer
+        <span class="apidocSignatureSpan">(arg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HeapBuffer(arg) {
+  (0, _classCallCheck3.default)(this, HeapBuffer);
+
+  var buffer = arg instanceof ArrayBuffer ? arg : new ArrayBuffer(arg);
+
+  var _this = (0, _possibleConstructorReturn3.default)(this, (HeapBuffer.__proto__ || (0, _getPrototypeOf2.default)(HeapBuffer)).
+call(this, buffer.byteLength));
+
+  _this._buffer = buffer;
+  _this._view = new DataView(_this._buffer);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    self._pending = null;
+    for (var i = 0; i &lt; pending.length; i++) {
+      self.write(pending[i]);
+    }
+  };
+  this._ws.onmessage = function (event) {
+    if (self.onmessage) {
+      var b = new _buf.<span class="apidocCodeKeywordSpan">HeapBuffer</span>(event.data);
+      self.onmessage(b);
+    }
+  };
+
+  this._ws.onerror = this._handleConnectionError;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.buf.NodeBuffer" id="apidoc.element.neo4j-driver.buf.NodeBuffer">
+        function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>NodeBuffer
+        <span class="apidocSignatureSpan">(arg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NodeBuffer(arg) {
+  (0, _classCallCheck3.default)(this, NodeBuffer);
+
+  var buffer = arg instanceof _node.Buffer ? arg : new _node.Buffer(arg);
+
+  var _this4 = (0, _possibleConstructorReturn3.default)(this, (NodeBuffer.__proto__ || (0, _getPrototypeOf2.default)(NodeBuffer)).
+call(this, buffer.length));
+
+  _this4._buffer = buffer;
+  return _this4;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this._conn = connect(opts, function () {
+if (!self._open) {
+  return;
+}
+
+self._conn.on('data', function (buffer) {
+  if (self.onmessage) {
+    self.onmessage(new _buf.<span class="apidocCodeKeywordSpan">NodeBuffer</span>(buffer));
+  }
+});
+
+self._conn.on('error', self._handleConnectionError);
+self._conn.on('end', self._handleConnectionTerminated);
+
+// Drain all pending messages
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.buf.SliceBuffer" id="apidoc.element.neo4j-driver.buf.SliceBuffer">
+        function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>SliceBuffer
+        <span class="apidocSignatureSpan">(start, length, inner)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function SliceBuffer(start, length, inner) {
+  (0, _classCallCheck3.default)(this, SliceBuffer);
+
+  var _this2 = (0, _possibleConstructorReturn3.default)(this, (SliceBuffer.__proto__ || (0, _getPrototypeOf2.default)(SliceBuffer
+)).call(this, length));
+
+  _this2._start = start;
+  _this2._inner = inner;
+  return _this2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.buf.alloc" id="apidoc.element.neo4j-driver.buf.alloc">
+        function <span class="apidocSignatureSpan">neo4j-driver.buf.</span>alloc
+        <span class="apidocSignatureSpan">(size)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function alloc(size) {
+  return new _DefaultBuffer(size);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var buffer = require('buffer');
+var Buffer = buffer.Buffer;
+var SlowBuffer = buffer.SlowBuffer;
+var MAX_LEN = buffer.kMaxLength || 2147483647;
+exports.alloc = function alloc(size, fill, encoding) {
+if (typeof Buffer.alloc === 'function') {
+  return Buffer.<span class="apidocCodeKeywordSpan">alloc</span>(size, fill, encoding);
+}
+if (typeof encoding === 'number') {
+  throw new TypeError('encoding must not be number');
+}
+if (typeof size !== 'number') {
+  throw new TypeError('size must be a number');
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.ch_dummy" id="apidoc.module.neo4j-driver.ch_dummy">module neo4j-driver.ch_dummy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.ch_dummy.channel" id="apidoc.element.neo4j-driver.ch_dummy.channel">
+        function <span class="apidocSignatureSpan">neo4j-driver.ch_dummy.</span>channel
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DummyChannel(opts) {
+  (0, _classCallCheck3.default)(this, DummyChannel);
+
+  this.written = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.chunking" id="apidoc.module.neo4j-driver.chunking">module neo4j-driver.chunking</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.chunking.Chunker" id="apidoc.element.neo4j-driver.chunking.Chunker">
+        function <span class="apidocSignatureSpan">neo4j-driver.chunking.</span>Chunker
+        <span class="apidocSignatureSpan">(channel, bufferSize)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Chunker(channel, bufferSize) {
+  (0, _classCallCheck3.default)(this, Chunker);
+
+  var _this = (0, _possibleConstructorReturn3.default)(this, (Chunker.__proto__ || (0, _getPrototypeOf2.default)(Chunker)).call(
+this, 0));
+
+  _this._bufferSize = bufferSize || _DEFAULT_BUFFER_SIZE;
+  _this._ch = channel;
+  _this._buffer = (0, _buf.alloc)(_this._bufferSize);
+  _this._currentChunkStart = 0;
+  _this._chunkOpen = false;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+this.url = url;
+this.server = { address: url };
+this._pendingObservers = [];
+this._currentObserver = undefined;
+this._ch = channel;
+this._dechunker = new _chunking.Dechunker();
+this._chunker = new _chunking.<span class="apidocCodeKeywordSpan">Chunker</span>(channel);
+this._packer = new _packstream.Packer(this._chunker);
+this._unpacker = new _packstream.Unpacker();
+
+this._isHandlingFailure = false;
+this._currentFailure = null;
+
+// Set to true on fatal errors, to get this out of session pool.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.chunking.Dechunker" id="apidoc.element.neo4j-driver.chunking.Dechunker">
+        function <span class="apidocSignatureSpan">neo4j-driver.chunking.</span>Dechunker
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Dechunker() {
+  (0, _classCallCheck3.default)(this, Dechunker);
+
+  this._currentMessage = [];
+  this._partialChunkHeader = 0;
+  this._state = this.AWAITING_CHUNK;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * to the next pending observer.
+ */
+this.url = url;
+this.server = { address: url };
+this._pendingObservers = [];
+this._currentObserver = undefined;
+this._ch = channel;
+this._dechunker = new _chunking.<span class="apidocCodeKeywordSpan">Dechunker</span>();
+this._chunker = new _chunking.Chunker(channel);
+this._packer = new _packstream.Packer(this._chunker);
+this._unpacker = new _packstream.Unpacker();
+
+this._isHandlingFailure = false;
+this._currentFailure = null;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.connection_holder" id="apidoc.module.neo4j-driver.connection_holder">module neo4j-driver.connection_holder</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connection_holder.default" id="apidoc.element.neo4j-driver.connection_holder.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.connection_holder.</span>default
+        <span class="apidocSignatureSpan">(mode, connectionProvider)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ConnectionHolder(mode, connectionProvider) {
+  (0, _classCallCheck3.default)(this, ConnectionHolder);
+
+  this._mode = mode;
+  this._connectionProvider = connectionProvider;
+  this._referenceCount = 0;
+  this._connectionPromise = _promise2.default.resolve(null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.connection_providers" id="apidoc.module.neo4j-driver.connection_providers">module neo4j-driver.connection_providers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connection_providers.DirectConnectionProvider" id="apidoc.element.neo4j-driver.connection_providers.DirectConnectionProvider">
+        function <span class="apidocSignatureSpan">neo4j-driver.connection_providers.</span>DirectConnectionProvider
+        <span class="apidocSignatureSpan">(address, connectionPool, driverOnErrorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DirectConnectionProvider(address, connectionPool, driverOnErrorCallback) {
+  (0, _classCallCheck3.default)(this, DirectConnectionProvider);
+
+  var _this = (0, _possibleConstructorReturn3.default)(this, (DirectConnectionProvider.__proto__ || (0, _getPrototypeOf2.default
+)(DirectConnectionProvider)).call(this));
+
+  _this._address = address;
+  _this._connectionPool = connectionPool;
+  _this._driverOnErrorCallback = driverOnErrorCallback;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+}, {
+  key: '_createConnectionProvider',
+
+
+  //Extension point
+  value: function _createConnectionProvider(address, connectionPool, driverOnErrorCallback) {
+    return new _connectionProviders.<span class="apidocCodeKeywordSpan">DirectConnectionProvider</span>(address, connectionPool,
+driverOnErrorCallback);
+  }
+
+  //Extension point
+
+}, {
+  key: '_createSession',
+  value: function _createSession(mode, connectionProvider, bookmark, config) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connection_providers.LoadBalancer" id="apidoc.element.neo4j-driver.connection_providers.LoadBalancer">
+        function <span class="apidocSignatureSpan">neo4j-driver.connection_providers.</span>LoadBalancer
+        <span class="apidocSignatureSpan">(address, connectionPool, driverOnErrorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function LoadBalancer(address, connectionPool, driverOnErrorCallback) {
+  (0, _classCallCheck3.default)(this, LoadBalancer);
+
+  var _this2 = (0, _possibleConstructorReturn3.default)(this, (LoadBalancer.__proto__ || (0, _getPrototypeOf2.default)(LoadBalancer
+)).call(this));
+
+  _this2._seedRouter = address;
+  _this2._routingTable = new _routingTable2.default(new _roundRobinArray2.default([_this2._seedRouter]));
+  _this2._rediscovery = new _rediscovery2.default();
+  _this2._connectionPool = connectionPool;
+  _this2._driverOnErrorCallback = driverOnErrorCallback;
+  _this2._hostNameResolver = LoadBalancer._createHostNameResolver();
+  return _this2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    (0, _classCallCheck3.default)(this, RoutingDriver);
+    return (0, _possibleConstructorReturn3.default)(this, (RoutingDriver.__proto__ || (0, _getPrototypeOf2.default)(RoutingDriver
+)).call(this, url, userAgent, token, RoutingDriver._validateConfig(config)));
+  }
+
+  (0, _createClass3.default)(RoutingDriver, [{
+    key: '_createConnectionProvider',
+    value: function _createConnectionProvider(address, connectionPool, driverOnErrorCallback) {
+return new _connectionProviders.<span class="apidocCodeKeywordSpan">LoadBalancer</span>(address, connectionPool, driverOnErrorCallback
+);
+    }
+  }, {
+    key: '_createSession',
+    value: function _createSession(mode, connectionProvider, bookmark, config) {
+var _this2 = this;
+
+return new RoutingSession(mode, connectionProvider, bookmark, config, function (error, conn) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connection_providers.SingleConnectionProvider" id="apidoc.element.neo4j-driver.connection_providers.SingleConnectionProvider">
+        function <span class="apidocSignatureSpan">neo4j-driver.connection_providers.</span>SingleConnectionProvider
+        <span class="apidocSignatureSpan">(connectionPromise)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function SingleConnectionProvider(connectionPromise) {
+  (0, _classCallCheck3.default)(this, SingleConnectionProvider);
+
+  var _this8 = (0, _possibleConstructorReturn3.default)(this, (SingleConnectionProvider.__proto__ || (0, _getPrototypeOf2.default
+)(SingleConnectionProvider)).call(this));
+
+  _this8._connectionPromise = connectionPromise;
+  return _this8;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.connector" id="apidoc.module.neo4j-driver.connector">module neo4j-driver.connector</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connector.Connection" id="apidoc.element.neo4j-driver.connector.Connection">
+        function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>Connection
+        <span class="apidocSignatureSpan">(channel, url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Connection(channel, url) {
+  (0, _classCallCheck3.default)(this, Connection);
+
+<span class="apidocCodeCommentSpan">  /**
+   * An ordered queue of observers, each exchange response (zero or more
+   * RECORD messages followed by a SUCCESS message) we recieve will be routed
+   * to the next pending observer.
+   */
+</span>  this.url = url;
+  this.server = { address: url };
+  this._pendingObservers = [];
+  this._currentObserver = undefined;
+  this._ch = channel;
+  this._dechunker = new _chunking.Dechunker();
+  this._chunker = new _chunking.Chunker(channel);
+  this._packer = new _packstream.Packer(this._chunker);
+  this._unpacker = new _packstream.Unpacker();
+
+  this._isHandlingFailure = false;
+  this._currentFailure = null;
+
+  // Set to true on fatal errors, to get this out of session pool.
+  this._isBroken = false;
+
+  // For deserialization, explain to the unpacker how to unpack nodes, rels, paths;
+  this._unpacker.structMappers[NODE] = _mappers.node;
+  this._unpacker.structMappers[RELATIONSHIP] = _mappers.rel;
+  this._unpacker.structMappers[UNBOUND_RELATIONSHIP] = _mappers.unboundRel;
+  this._unpacker.structMappers[PATH] = _mappers.path;
+
+  var self = this;
+  // TODO: Using `onmessage` and `onerror` came from the WebSocket API,
+  // it reads poorly and has several annoying drawbacks. Swap to having
+  // Channel extend EventEmitter instead, then we can use `on('data',..)`
+  this._ch.onmessage = function (buf) {
+    var proposed = buf.readInt32();
+    if (proposed == 1) {
+      // Ok, protocol running. Simply forward all messages past
+      // this to the dechunker
+      self._ch.onmessage = function (buf) {
+        self._dechunker.write(buf);
+      };
+
+      if (buf.hasRemaining()) {
+        self._dechunker.write(buf.readSlice(buf.remaining()));
+      }
+    } else if (proposed == 1213486160) {
+      //server responded 1213486160 == 0x48545450 == "HTTP"
+      self._handleFatalError((0, _error.newError)("Server responded HTTP. Make sure you are not trying to connect to the http endpoint
+ " + "(HTTP defaults to port 7474 whereas BOLT defaults to port 7687)"));
+    } else {
+      self._handleFatalError((0, _error.newError)("Unknown Bolt protocol version: " + proposed));
+    }
+  };
+
+  // Listen to connection errors. Important note though;
+  // In some cases we will get a channel that is already broken (for instance,
+  // if the user passes invalid configuration options). In this case, onerror
+  // will have "already triggered" before we add out listener here. So the line
+  // below also checks that the channel is not already failed. This could be nicely
+  // encapsulated into Channel if we used `on('error', ..)` rather than `onerror=..`
+  // as outlined in the comment about `onmessage` further up in this file.
+  this._ch.onerror = this._handleFatalError.bind(this);
+  if (this._ch._error) {
+    this._handleFatalError(this._ch._error);
+  }
+
+  this._dechunker.onmessage = function (buf) {
+    self._handleMessage(self._unpacker.unpack(buf));
+  };
+
+  var handshake = (0, _buf.alloc)(5 * 4);
+  //magic preamble
+  handshake.writeInt32(MAGIC_PREAMBLE);
+  //proposed versions
+  handshake.writeInt32(1);
+  handshake.writeInt32(0);
+  handshake.writeInt32(0);
+  handshake.writeInt32(0);
+  handshake.reset();
+  this._ch.write(handshake);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connector.connect" id="apidoc.element.neo4j-driver.connector.connect">
+        function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>connect
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function connect(url) {
+  var config = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+  var Ch = config.channel || Channel;
+  var host = parseHost(url);
+  var port = parsePort(url) || 7687;
+  var completeUrl = host + ':' + port;
+
+  return new Connection(new Ch({
+    host: parseHost(url),
+    port: parsePort(url) || 7687,
+    // Default to using encryption if trust-on-first-use is available
+    encrypted: config.encrypted == null ? (0, _features2.default)("trust_all_certificates") : config.encrypted,
+    // Default to using TRUST_ALL_CERTIFICATES if it is available
+    trust: config.trust || ((0, _features2.default)("trust_all_certificates") ? "TRUST_ALL_CERTIFICATES" : "TRUST_CUSTOM_CA_SIGNED_CERTIFICATES
+"),
+    trustedCertificates: config.trustedCertificates || [],
+    knownHosts: config.knownHosts
+  }), completeUrl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return _fs2.default.readFileSync(f);
+  }),
+  // Because we manually check for this in the connect callback, to give
+  // a more helpful error to the user
+  rejectUnauthorized: false
+};
+
+var socket = _tls2.default.<span class="apidocCodeKeywordSpan">connect</span>(opts.port, opts.host, tlsOpts, function () {
+  if (!socket.authorized) {
+    onFailure((0, _error.newError)("Server certificate is not trusted. If you trust the database you are connecting to, add
+" + " the signing certificate, or the server certificate, to the list of certificates trusted by this driver" + &amp;#
+x22; using `neo4j.v1.driver(.., { trustedCertificates:['path/to/certificate.crt']}). This " + " is a security
+ measure to protect against man-in-the-middle attacks. If you are just trying " + " Neo4j out and are not concerned about
+ encryption, simply disable it using `encrypted=\"" + _util.ENCRYPTION_OFF + "\"`" + " in the driver options. Socket responded with: " + socket.authorizationError));
+  } else {
+    onSuccess();
+  }
+});
+socket.on('error', onFailure);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connector.parseHost" id="apidoc.element.neo4j-driver.connector.parseHost">
+        function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parseHost
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseHost(url) {
+  return url.match(URLREGEX)[3];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connector.parsePort" id="apidoc.element.neo4j-driver.connector.parsePort">
+        function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parsePort
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parsePort(url) {
+  return url.match(URLREGEX)[4];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connector.parseScheme" id="apidoc.element.neo4j-driver.connector.parseScheme">
+        function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parseScheme
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseScheme(url) {
+  var scheme = url.match(URLREGEX)[1] || '';
+  return scheme.toLowerCase();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.connector.parseUrl" id="apidoc.element.neo4j-driver.connector.parseUrl">
+        function <span class="apidocSignatureSpan">neo4j-driver.connector.</span>parseUrl
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseUrl(url) {
+  return url.match(URLREGEX)[2];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -877,6 +2086,80 @@ call(this, message));
 
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.features" id="apidoc.module.neo4j-driver.features">module neo4j-driver.features</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.features.default" id="apidoc.element.neo4j-driver.features.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.features.</span>default
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hasFeature(name) {
+  return FEATURES[name] &amp;&amp; FEATURES[name]();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.get_servers_util" id="apidoc.module.neo4j-driver.get_servers_util">module neo4j-driver.get_servers_util</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.get_servers_util.default" id="apidoc.element.neo4j-driver.get_servers_util.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.get_servers_util.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GetServersUtil() {
+  (0, _classCallCheck3.default)(this, GetServersUtil);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
 
 
 </div>
@@ -1065,6 +2348,80 @@ path: function path(unpacker, buf) {
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.host_name_resolvers" id="apidoc.module.neo4j-driver.host_name_resolvers">module neo4j-driver.host_name_resolvers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.host_name_resolvers.DnsHostNameResolver" id="apidoc.element.neo4j-driver.host_name_resolvers.DnsHostNameResolver">
+        function <span class="apidocSignatureSpan">neo4j-driver.host_name_resolvers.</span>DnsHostNameResolver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DnsHostNameResolver() {
+  (0, _classCallCheck3.default)(this, DnsHostNameResolver);
+
+  var _this2 = (0, _possibleConstructorReturn3.default)(this, (DnsHostNameResolver.__proto__ || (0, _getPrototypeOf2.default)(DnsHostNameResolver
+)).call(this));
+
+  _this2._dns = require('dns');
+  return _this2;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        routingTable.forgetRouter(address);
+      }
+    }
+  }, {
+    key: '_createHostNameResolver',
+    value: function _createHostNameResolver() {
+      if ((0, _features2.default)('dns_lookup')) {
+        return new _hostNameResolvers.<span class="apidocCodeKeywordSpan">DnsHostNameResolver</span>();
+      }
+      return new _hostNameResolvers.DummyHostNameResolver();
+    }
+  }]);
+  return LoadBalancer;
+}(ConnectionProvider);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.host_name_resolvers.DummyHostNameResolver" id="apidoc.element.neo4j-driver.host_name_resolvers.DummyHostNameResolver">
+        function <span class="apidocSignatureSpan">neo4j-driver.host_name_resolvers.</span>DummyHostNameResolver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DummyHostNameResolver() {
+  (0, _classCallCheck3.default)(this, DummyHostNameResolver);
+  return (0, _possibleConstructorReturn3.default)(this, (DummyHostNameResolver.__proto__ || (0, _getPrototypeOf2.default)(DummyHostNameResolver
+)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+}, {
+  key: '_createHostNameResolver',
+  value: function _createHostNameResolver() {
+    if ((0, _features2.default)('dns_lookup')) {
+      return new _hostNameResolvers.DnsHostNameResolver();
+    }
+    return new _hostNameResolvers.<span class="apidocCodeKeywordSpan">DummyHostNameResolver</span>();
+  }
+}]);
+return LoadBalancer;
+}(ConnectionProvider);
+
+var SingleConnectionProvider = exports.SingleConnectionProvider = function (_ConnectionProvider3) {
+(0, _inherits3.default)(SingleConnectionProvider, _ConnectionProvider3);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.neo4j-driver.integer" id="apidoc.module.neo4j-driver.integer">module neo4j-driver.integer</a></h1>
 
 
@@ -1226,16 +2583,163 @@ var aLargerInteger = neo4j.int("9223372036854775807");
   return Integer.fromValue(val).toString(radix);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-```
+    neorunPath, '--stop=' + neo4jHome
+]);
+});
 
-If you will be handling integers larger than that, you can should convert them to strings:
+var runScript = function(cmd) {
+var spawnSync = childProcess.spawnSync, child, code;
+child = spawnSync('python', cmd);
+console.log("Script Outputs:\n" + child.stdout.<span class="apidocCodeKeywordSpan">toString</span>());
+var error = child.stderr.toString();
+if (error.trim() !== "")
+    console.log("Script Errors:\n"+ error);
+code = child.status;
+if( code !==0 )
+{
+    throw "Script finished with code " + code
+...</pre></li>
+    </ul>
 
-```javascript
-var aLargerInteger = neo4j.int("9223372036854775807");
-if (!neo4j.integer.inSafeRange(aSmallInteger)) {
-    var integerAsString = aLargerInteger.<span class="apidocCodeKeywordSpan">toString</span>();
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.packstream" id="apidoc.module.neo4j-driver.packstream">module neo4j-driver.packstream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.packstream.Packer" id="apidoc.element.neo4j-driver.packstream.Packer">
+        function <span class="apidocSignatureSpan">neo4j-driver.packstream.</span>Packer
+        <span class="apidocSignatureSpan">(channel)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Packer(channel) {
+  (0, _classCallCheck3.default)(this, Packer);
+
+  this._ch = channel;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.url = url;
+this.server = { address: url };
+this._pendingObservers = [];
+this._currentObserver = undefined;
+this._ch = channel;
+this._dechunker = new _chunking.Dechunker();
+this._chunker = new _chunking.Chunker(channel);
+this._packer = new _packstream.<span class="apidocCodeKeywordSpan">Packer</span>(this._chunker);
+this._unpacker = new _packstream.Unpacker();
+
+this._isHandlingFailure = false;
+this._currentFailure = null;
+
+// Set to true on fatal errors, to get this out of session pool.
+this._isBroken = false;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.packstream.Structure" id="apidoc.element.neo4j-driver.packstream.Structure">
+        function <span class="apidocSignatureSpan">neo4j-driver.packstream.</span>Structure
+        <span class="apidocSignatureSpan">(signature, fields)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Structure(signature, fields) {
+  (0, _classCallCheck3.default)(this, Structure);
+
+  this.signature = signature;
+  this.fields = fields;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.packstream.Unpacker" id="apidoc.element.neo4j-driver.packstream.Unpacker">
+        function <span class="apidocSignatureSpan">neo4j-driver.packstream.</span>Unpacker
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Unpacker() {
+  (0, _classCallCheck3.default)(this, Unpacker);
+
+  // Higher level layers can specify how to map structs to higher-level objects.
+  // If we recieve a struct that has a signature that does not have a mapper,
+  // we simply return a Structure object.
+  this.structMappers = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.server = { address: url };
+this._pendingObservers = [];
+this._currentObserver = undefined;
+this._ch = channel;
+this._dechunker = new _chunking.Dechunker();
+this._chunker = new _chunking.Chunker(channel);
+this._packer = new _packstream.Packer(this._chunker);
+this._unpacker = new _packstream.<span class="apidocCodeKeywordSpan">Unpacker</span>();
+
+this._isHandlingFailure = false;
+this._currentFailure = null;
+
+// Set to true on fatal errors, to get this out of session pool.
+this._isBroken = false;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.pool" id="apidoc.module.neo4j-driver.pool">module neo4j-driver.pool</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.pool.default" id="apidoc.element.neo4j-driver.pool.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.pool.</span>default
+        <span class="apidocSignatureSpan">(create)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Pool(create) {
+  var destroy = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : function () {
+    return true;
+  };
+  var validate = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : function () {
+    return true;
+  };
+  var maxIdle = arguments.length &gt; 3 &amp;&amp; arguments[3] !== undefined ? arguments[3] : 50;
+  (0, _classCallCheck3.default)(this, Pool);
+
+  this._create = create;
+  this._destroy = destroy;
+  this._validate = validate;
+  this._maxIdle = maxIdle;
+  this._pools = {};
+  this._release = this._release.bind(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
 }
-```
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
 ...</pre></li>
     </ul>
 
@@ -1261,6 +2765,45 @@ if (!neo4j.integer.inSafeRange(aSmallInteger)) {
   this.length = keys.length;
   this._fields = fields;
   this._fieldLookup = fieldLookup || generateFieldLookup(keys);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.rediscovery" id="apidoc.module.neo4j-driver.rediscovery">module neo4j-driver.rediscovery</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.rediscovery.default" id="apidoc.element.neo4j-driver.rediscovery.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.rediscovery.</span>default
+        <span class="apidocSignatureSpan">(getServersUtil)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Rediscovery(getServersUtil) {
+  (0, _classCallCheck3.default)(this, Rediscovery);
+
+  this._getServersUtil = getServersUtil || new _getServersUtil2.default();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
@@ -1384,6 +2927,46 @@ if (!neo4j.integer.inSafeRange(aSmallInteger)) {
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.round_robin_array" id="apidoc.module.neo4j-driver.round_robin_array">module neo4j-driver.round_robin_array</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.round_robin_array.default" id="apidoc.element.neo4j-driver.round_robin_array.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.round_robin_array.</span>default
+        <span class="apidocSignatureSpan">(items)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RoundRobinArray(items) {
+  (0, _classCallCheck3.default)(this, RoundRobinArray);
+
+  this._items = items || [];
+  this._offset = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.neo4j-driver.routing_driver" id="apidoc.module.neo4j-driver.routing_driver">module neo4j-driver.routing_driver</a></h1>
 
 
@@ -1400,6 +2983,48 @@ if (!neo4j.integer.inSafeRange(aSmallInteger)) {
   (0, _classCallCheck3.default)(this, RoutingDriver);
   return (0, _possibleConstructorReturn3.default)(this, (RoutingDriver.__proto__ || (0, _getPrototypeOf2.default)(RoutingDriver)).
 call(this, url, userAgent, token, RoutingDriver._validateConfig(config)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.routing_table" id="apidoc.module.neo4j-driver.routing_table">module neo4j-driver.routing_table</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.routing_table.default" id="apidoc.element.neo4j-driver.routing_table.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.routing_table.</span>default
+        <span class="apidocSignatureSpan">(routers, readers, writers, expirationTime)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RoutingTable(routers, readers, writers, expirationTime) {
+  (0, _classCallCheck3.default)(this, RoutingTable);
+
+  this.routers = routers || new _roundRobinArray2.default();
+  this.readers = readers || new _roundRobinArray2.default();
+  this.writers = writers || new _roundRobinArray2.default();
+  this.expirationTime = expirationTime || (0, _integer.int)(0);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
@@ -1445,6 +3070,56 @@ call(this, url, userAgent, token, RoutingDriver._validateConfig(config)));
   this._hasTx = false;
   this._lastBookmark = bookmark;
   this._transactionExecutor = _createTransactionExecutor(config);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.stream_observer" id="apidoc.module.neo4j-driver.stream_observer">module neo4j-driver.stream_observer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.stream_observer.default" id="apidoc.element.neo4j-driver.stream_observer.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.stream_observer.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StreamObserver() {
+  var errorTransformer = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : function (err) {
+    return err;
+  };
+  (0, _classCallCheck3.default)(this, StreamObserver);
+
+  this._fieldKeys = null;
+  this._fieldLookup = null;
+  this._queuedRecords = [];
+  this._tail = null;
+  this._error = null;
+  this._hasFailed = false;
+  this._errorTransformer = errorTransformer;
+  this._observer = null;
+  this._conn = null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
@@ -1522,6 +3197,108 @@ call(this, url, userAgent, token, RoutingDriver._validateConfig(config)));
  * @access private
 ...</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.transaction_executor" id="apidoc.module.neo4j-driver.transaction_executor">module neo4j-driver.transaction_executor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.transaction_executor.default" id="apidoc.element.neo4j-driver.transaction_executor.default">
+        function <span class="apidocSignatureSpan">neo4j-driver.transaction_executor.</span>default
+        <span class="apidocSignatureSpan">(maxRetryTimeMs, initialRetryDelayMs, multiplier, jitterFactor)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TransactionExecutor(maxRetryTimeMs, initialRetryDelayMs, multiplier, jitterFactor) {
+  (0, _classCallCheck3.default)(this, TransactionExecutor);
+
+  this._maxRetryTimeMs = _valueOrDefault(maxRetryTimeMs, DEFAULT_MAX_RETRY_TIME_MS);
+  this._initialRetryDelayMs = _valueOrDefault(initialRetryDelayMs, DEFAULT_INITIAL_RETRY_DELAY_MS);
+  this._multiplier = _valueOrDefault(multiplier, DEFAULT_RETRY_DELAY_MULTIPLIER);
+  this._jitterFactor = _valueOrDefault(jitterFactor, DEFAULT_RETRY_DELAY_JITTER_FACTOR);
+
+  this._inFlightTimeoutIds = [];
+
+  this._verifyAfterConstruction();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  this._url = url;
+  this._userAgent = userAgent;
+  this._openSessions = {};
+  this._sessionIdGenerator = 0;
+  this._token = token;
+  this._config = config;
+  this._pool = new _pool2.<span class="apidocCodeKeywordSpan">default</span>(this._createConnection.bind(this), this._destroyConnection
+.bind(this), Driver._validateConnection.bind(this), config.connectionPoolSize);
+  this._connectionProvider = this._createConnectionProvider(url, this._pool, this._driverOnErrorCallback.bind(this));
+}
+
+/**
+ * Create a new connection instance.
+ * @return {Connection} new connector-api session instance, a low level session API.
+ * @access private
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.neo4j-driver.util" id="apidoc.module.neo4j-driver.util">module neo4j-driver.util</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.util.assertString" id="apidoc.element.neo4j-driver.util.assertString">
+        function <span class="apidocSignatureSpan">neo4j-driver.util.</span>assertString
+        <span class="apidocSignatureSpan">(obj, objName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function assertString(obj, objName) {
+  if (!isString(obj)) {
+    throw new TypeError(objName + ' expected to be string but was: ' + (0, _stringify2.default)(obj));
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.neo4j-driver.util.isEmptyObjectOrNull" id="apidoc.element.neo4j-driver.util.isEmptyObjectOrNull">
+        function <span class="apidocSignatureSpan">neo4j-driver.util.</span>isEmptyObjectOrNull
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmptyObjectOrNull(obj) {
+  if (isNull(obj)) {
+    return true;
+  }
+
+  if (!isObject(obj)) {
+    return false;
+  }
+
+  for (var prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      return false;
+    }
+  }
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
 
 
 </div>
@@ -1936,16 +3713,21 @@ var aLargerInteger = neo4j.int("9223372036854775807");
   return Integer.fromValue(val).toString(radix);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-```
+    neorunPath, '--stop=' + neo4jHome
+]);
+});
 
-If you will be handling integers larger than that, you can should convert them to strings:
-
-```javascript
-var aLargerInteger = neo4j.int("9223372036854775807");
-if (!neo4j.integer.inSafeRange(aSmallInteger)) {
-    var integerAsString = aLargerInteger.<span class="apidocCodeKeywordSpan">toString</span>();
-}
-```
+var runScript = function(cmd) {
+var spawnSync = childProcess.spawnSync, child, code;
+child = spawnSync('python', cmd);
+console.log("Script Outputs:\n" + child.stdout.<span class="apidocCodeKeywordSpan">toString</span>());
+var error = child.stderr.toString();
+if (error.trim() !== "")
+    console.log("Script Errors:\n"+ error);
+code = child.status;
+if( code !==0 )
+{
+    throw "Script finished with code " + code
 ...</pre></li>
     </ul>
 
